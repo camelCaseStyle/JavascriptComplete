@@ -1,3 +1,5 @@
+
+if(false){
 /* 
     Lecture: Variables
     
@@ -195,3 +197,41 @@ for(var i = 0; i < 8; i++){
     }
     console.log(i);
 }
+
+
+/*-----------------------*/
+
+/*Coding challenge three*/
+
+/*-----------------------*/
+
+//ensure that nothing above is printed 
+}
+
+var birthYears = [1990, 1994, 1965, 2010, 2017, 1947];
+
+
+function printFullAge(birthYears){
+    var agesOfPerson = [];
+    var isPersonOfAge = [];
+    var currentYear = 2017;
+    for(var i = 0; i < birthYears.length; i++){
+        agesOfPerson[i] = currentYear - birthYears[i];
+        if(agesOfPerson[i] >= 18){
+            isPersonOfAge[i] = true;
+        }else{
+            isPersonOfAge[i] = false;
+        }
+    }
+    return isPersonOfAge;
+}
+
+var full_1 = printFullAge(birthYears);
+console.log(full_1);
+
+birthYearsSecond = [1965, 2008, 1992];
+console.log(printFullAge(birthYearsSecond));
+
+
+
+
